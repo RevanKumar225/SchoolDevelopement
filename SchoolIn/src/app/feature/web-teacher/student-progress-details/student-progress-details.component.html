@@ -1,1 +1,29 @@
-<p>student-progress-details works!</p>
+<div width="400" height="400">
+    <circle-progress 
+  [percent]="progress"
+  [radius]="100"
+  [outerStrokeWidth]="10"
+  [innerStrokeWidth]="10"
+  [space] = "-10"
+  [outerStrokeColor]="'#4882c2'"
+  [innerStrokeColor]="'#e7e8ea'"
+  [titleFontSize]= "titleFontSize"
+  [unitsFontSize]= "unitsFontSize"
+  [showSubtitle] = "false"
+  [animation]="true"
+  [animationDuration]="300"
+  [startFromZero]="false"
+  [responsive]="true"></circle-progress>
+</div>
+<div>
+    <canvas baseChart 
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins">
+    </canvas>
+  </div>
+  

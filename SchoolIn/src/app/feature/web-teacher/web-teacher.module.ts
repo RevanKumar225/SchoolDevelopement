@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { WebTeacherRoutingModule } from './web-teacher-routing.module';
 import { StudentProgressDetailsComponent } from './student-progress-details/student-progress-details.component';
 import { ChartsModule } from 'ng2-charts';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ChartsModule } from 'ng2-charts';
   imports: [
     CommonModule,
     WebTeacherRoutingModule,
-    ChartsModule
-  ]
+    ChartsModule,
+    NgCircleProgressModule.forRoot({})
+  ],
 })
 export class WebTeacherModule { }
